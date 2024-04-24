@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2211707 고희현</title>
+        <h2>동아리 가입 양식</h2>
+    </head>
+    <body>
+        <hr><br>
+        <form>
+            <label for="name">이름 </label>
+            <input type="text" id="name"><br>
+            <label for="major">학부/학과 </label>
+            <input list="majors">
+            <datalist id="majors" name="majors">
+                <option value="화공생명공학부">
+                <option value="인공지능학부">
+                <option value="소프트웨어학부">
+                <option value="기계시스템학부">
+            </datalist><br>
+            <label for="grade">학년 </label>
+            <input type="radio" id="1st" name="1st" value="1st">
+            <label for="1st">1학년</label>
+            <input type="radio" id="2nd" name="2nd" value="2nd">
+            <label for="2nd">2학년</label>
+            <input type="radio" id="3rd" name="3rd" value="3rd">
+            <label for="3rd">3학년</label>
+            <input type="radio" id="4th" name="4th" value="4th">
+            <label for="4th">4학년</label><br>
+            <label for="num">학번</label>
+            <input type="text" id="num"><br>
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="asdf1234@gmail.com"><br>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" placeholder="010-1234-1234" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+            <label for="re">가입동기</label>
+            <textarea id="re"></textarea><br><br>
+            <button type="submit" onclick="alert('제출되었습니다.')">제출하기</button>
+            <button type="reset" onclick="alert('취소되었습니다.')">취소하기</button>
+        </form>
+    </body>
+</html>
